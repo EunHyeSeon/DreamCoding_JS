@@ -36,6 +36,35 @@ console.log(fruits);
 fruits.pop();
 console.log(fruits);
 
-//add an item to the beginning 
+//unshift:add an item to the beginning 
+fruits.unshift('🍉');
+console.log(fruits);
+//shift: remove an item from the beginning
+fruits.shift();
+console.log(fruits);
+//note!! shift, unsift are slower than pop, push
+//splice: remove an item by index position
+fruits.push('🍑','🍒');
+console.log(fruits);
+fruits.splice(1, 1);
+console.log(fruits);
+fruits.splice(2,1,'🥝');
+console.log(fruits);
 
+//combine two arrays
+const fruits2 = ['🥥', '🥑'];
+const newFruits = fruits.concat(fruits2);
+console.log(newFruits);
 
+//5. Searching
+//find the index
+console.clear();
+console.log(fruits);
+console.log(fruits,indexOf('🍎'));
+console.log(fruits.includes('🍌'));
+
+//lastIndexOf
+fruits.push('🍎');
+console.log(fruits);
+console.log(fruits.indexOf('🍎'));
+console.log(fruits.lastIndexOf('🍎'));
